@@ -17,7 +17,7 @@ class SpeakEngine:
 
 	def speak_in_english(self,words):
 		self._engine.setProperty('voice', 'english')
-		rate = self._rate
+		rate = self._rate - 30
 		self._engine.setProperty('rate', rate);
 		self._engine.say(words)
 		self._engine.runAndWait()
