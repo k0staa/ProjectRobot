@@ -19,6 +19,13 @@ Currently, the project consists mainly of an application written in Python. It t
 ### Extra dependencies
 Because I use clone of RaspberryPi I use modified RPi_GPIO library. But if you want to use original RaspberryPI you can use library from Python Package Index.
 You can use `motors.py` if you want to connect RaspberryPI to motors directly or (just like me) you can use Adafruit Motor Shield [Adafruit Motor Shield](https://www.adafruit.com/product/81) and use `mshield.py`.
+To install PyAudio library you need to install Portaudio library in your system. In ubuntu you can do this by:
+```sh
+sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+```
+
+I use Python [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) library which needs Flac library installed on system `sudo apt-get install flac` on Ubuntu.
+You can use many libraries and APIs with SpeechRecognition library, I chose [WIT AI](https://wit.ai)
 
 ### Installing 
 Project is using Python 3. I prefer to use Python virtual environment but you can just use global libraries.
