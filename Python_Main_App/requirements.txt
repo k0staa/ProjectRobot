@@ -11,6 +11,6 @@ idna==2.6
 itsdangerous==0.24
 pyttsx3==2.7
 requests==2.18.4
-urllib3==1.22
+urllib3==1.26.5
 pyAudio==0.2.11
 SpeechRecognition==3.8.1
